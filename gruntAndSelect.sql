@@ -1,0 +1,12 @@
+grant select  on tgui.asterisk_queues to 'etl'@'172.20.60.112' identified by '5wHSQ8cL';
+GRANT SELECT ON `tgui`.`asterisk_members` TO 'etl'@'172.20.60.112';
+GRANT SELECT ON `tgui`.`agents` TO 'etl'@'172.20.60.112';     
+GRANT SELECT ON `tgui`.`profiles` TO 'etl'@'172.20.60.112';              
+GRANT SELECT ON `tgui`.`departments` TO 'etl'@'172.20.60.112';           
+GRANT SELECT ON `tgui`.`recordings` TO 'etl'@'172.20.60.112';            
+GRANT SELECT ON `tgui`.`ext_numbers` TO 'etl'@'172.20.60.112';           
+GRANT SELECT ON `tgui`.`departments_profiles` TO 'etl'@'172.20.60.112';
+GRANT SELECT ON `tgui`.`asterisk_datas` TO 'etl'@'172.20.60.112';  
+GRANT SELECT ON `tgui`.`queues` TO 'etl'@'172.20.60.112';        
+GRANT SELECT ON `tgui`.`asterisk_queue_entries` TO 'etl'@'172.20.60.112';
+GRANT SELECT ON `tgui`.`asterisk_agents` TO 'etl'@'172.20.60.112';
