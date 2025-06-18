@@ -1,3 +1,4 @@
+SET @ExtIVR = '3050';
 -- Pair 1
 INSERT INTO `routines` VALUES (NULL, 'دریافت شماره دورکاری', '', 101);
 SET @last_idGetRemote = LAST_INSERT_ID();
@@ -67,7 +68,7 @@ VALUES (NULL, 'support.getMyQueue', @last_idGetQueueRemote, 'XML-RPC', 'agentBri
 -- IVR
 
 INSERT INTO `ivrs` VALUES 
-(null,'دورکاری',2,240,'3006',NULL,NULL,101);
+(null,'دورکاری',2,240,@ExtIVR,NULL,NULL,101);
 SET @last_idIVR = LAST_INSERT_ID();
 
 INSERT INTO `ivr_details` VALUES 
