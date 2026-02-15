@@ -14,6 +14,10 @@ GRANT SELECT ON `tgui`.`queues` TO 'etl'@'<Replace IP>';
 GRANT SELECT ON `tgui`.`asterisk_queue_entries` TO 'etl'@'<Replace IP>';
 GRANT SELECT ON `tgui`.`asterisk_agents` TO 'etl'@'<Replace IP>';
 ```
+
+```mysql
+ flush privileges;
+```
 ## firewalld 
 ```bash
 firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.17.235" port port="3306" protocol="tcp" accept'
